@@ -18,7 +18,7 @@ var configFilePath = ""
 
 func main() {
 	go func() {
-		http.ListenAndServe("0.0.0.0:6060", nil)
+		http.ListenAndServe("0.0.0.0:443", nil)
 	}()
 
 	flag.StringVar(&configFilePath, "c", "", "path to config file: config.yaml")
